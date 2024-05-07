@@ -1,2 +1,2 @@
-# fem-project
-A repository for the Frontend Masters project
+# Frontend Masters Assignment
+Repository for checkout page 
