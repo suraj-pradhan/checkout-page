@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  /* Backgrounds */
+  --primary-background: #faf8ef;
+  /* Colors */
+  --primary-text-color: #776e65;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -36,14 +44,12 @@ body {
   background-color: #eee1d5;
   border-radius: 10px;
   padding: 0.8em 1.4em 1em;
-  height: 18em;
   width: 30em;
 }
 .payment-details {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  height: 30em;
   width: 33em;
 }
 
@@ -64,7 +70,7 @@ body {
 .payment-section {
   background-color: #eee1d5;
   border-radius: 10px;
-  padding: 0.8em 1.4em 1.4em;
+  padding: 0.8em 1.4em 0.3em;
 }
 
 .payment-section input {
@@ -72,6 +78,7 @@ body {
   border: 1px solid burlywood;
   padding: 0 12px;
   border-radius: 20px;
+  margin-bottom: 20px;
   height: 30px;
 }
 
@@ -98,3 +105,27 @@ body {
   margin: 1.5em 0;
 }
 /* Rules for checkout details ends */
+
+/* Rules for order section */
+
+.order-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-button {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 40px;
+  border: 1px solid burlywood;
+  background-color: rgb(235, 205, 165);
+  border-radius: 20px;
+  width: 70%;
+}
+
+.order-button button {
+  border: none;
+  background-color: transparent;
+}
