@@ -1,16 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
+  /* Navbar */
+  --primary-navbar: #412316;
   /* Backgrounds */
-  --primary-background: #faf8ef;
+  --primary-background: #eff0ef;
+  --secondary-background: #eee1d5;
   /* Colors */
-  --primary-text-color: #776e65;
+  --primary-text-color: #2b2d24;
+  --secondary-text-color: #ede6b6;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background);
 }
 
 /* Rules for Navbar Section */
@@ -18,9 +24,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #43281c;
+  background-color: var(--primary-navbar);
   height: 4em;
-  color: #ede6b6;
+  color: var(--secondary-text-color);
   gap: 4px;
 }
 
@@ -41,7 +47,7 @@ body {
 }
 
 .item-details {
-  background-color: #eee1d5;
+  background-color: var(--secondary-background);
   border-radius: 10px;
   padding: 0.8em 1.4em 1em;
   width: 30em;
@@ -50,11 +56,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  width: 33em;
+  /* width: 33em; */
 }
 
 .name-section {
-  background-color: #eee1d5;
+  background-color: var(--secondary-background);
   border-radius: 10px;
   padding: 0.8em 1.4em 1.4em;
 }
@@ -68,7 +74,7 @@ body {
 }
 
 .payment-section {
-  background-color: #eee1d5;
+  background-color: var(--secondary-background);
   border-radius: 10px;
   padding: 0.8em 1.4em 0.3em;
 }
@@ -128,4 +134,5 @@ body {
 .order-button button {
   border: none;
   background-color: transparent;
+  color: var(--primary-text-color);
 }
