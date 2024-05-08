@@ -9,6 +9,7 @@
   /* Colors */
   --primary-text-color: #2b2d24;
   --secondary-text-color: #ede6b6;
+  --tertiary-text-color: #87572a;
 }
 
 body {
@@ -66,7 +67,7 @@ body {
 
 .name-section input {
   width: 94%;
-  border: 2px solid var(--primary-navbar);
+  border: 2px solid var(--tertiary-text-color);
   padding: 0 12px;
   border-radius: 20px;
   height: 35px;
@@ -81,7 +82,7 @@ body {
 
 .payment-section input {
   width: 94%;
-  border: 2px solid var(--primary-navbar);
+  border: 2px solid var(--tertiary-text-color);
   padding: 0 12px;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -97,8 +98,8 @@ body {
 
 .input-label {
   position: absolute;
-  z-index: 1;
   background-color: var(--secondary-background);
+  color: var(--tertiary-text-color);
   border-radius: 2px;
   padding: 0 2px;
   font-size: 13px;
@@ -125,7 +126,7 @@ body {
 
 /* Rules for horizontal line */
 .horizontal-line {
-  border: 1px solid rgb(190, 142, 78);
+  border: 1px solid var(--tertiary-text-color);
   margin: 1.5em 0;
 }
 /* Rules for checkout details ends */
