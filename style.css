@@ -40,7 +40,6 @@ body {
 .checkout-details {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   padding: 60px 20px;
   margin: 10px 10px;
   gap: 60px;
@@ -56,7 +55,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  /* width: 33em; */
+  width: 25em;
 }
 
 .name-section {
@@ -67,10 +66,11 @@ body {
 
 .name-section input {
   width: 94%;
-  border: 1px solid burlywood;
+  border: 2px solid var(--primary-navbar);
   padding: 0 12px;
   border-radius: 20px;
   height: 30px;
+  background-color: var(--secondary-background);
 }
 
 .payment-section {
@@ -81,11 +81,29 @@ body {
 
 .payment-section input {
   width: 94%;
-  border: 1px solid burlywood;
+  border: 2px solid var(--primary-navbar);
   padding: 0 12px;
   border-radius: 20px;
   margin-bottom: 20px;
   height: 30px;
+  background-color: var(--secondary-background);
+}
+
+.card-number,
+.cvv-number,
+.order-name {
+  position: relative;
+}
+
+.input-label {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--secondary-background);
+  border-radius: 2px;
+  padding: 0 2px;
+  font-size: 12px;
+  top: -7px;
+  left: 10px;
 }
 
 .individual-item {
@@ -118,6 +136,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bill-details {
+  display: flex;
+  justify-content: space-between;
+  width: 18em;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.bill-details.total {
+  margin-top: 10px;
+  font-weight: 400;
 }
 
 .order-button {
@@ -128,11 +162,18 @@ body {
   border: 1px solid burlywood;
   background-color: rgb(235, 205, 165);
   border-radius: 20px;
-  width: 70%;
+  width: 60%;
 }
 
 .order-button button {
   border: none;
   background-color: transparent;
   color: var(--primary-text-color);
+}
+
+/* Media Queries */
+@media (max-width: 720px) {
+  .checkout-details {
+    flex-wrap: wrap;
+  }
 }
