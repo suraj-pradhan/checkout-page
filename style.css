@@ -55,7 +55,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  /* width: 33em; */
+  width: 25em;
 }
 
 .name-section {
@@ -66,10 +66,11 @@ body {
 
 .name-section input {
   width: 94%;
-  border: 1px solid burlywood;
+  border: 2px solid var(--primary-navbar);
   padding: 0 12px;
   border-radius: 20px;
   height: 30px;
+  background-color: var(--secondary-background);
 }
 
 .payment-section {
@@ -80,11 +81,29 @@ body {
 
 .payment-section input {
   width: 94%;
-  border: 1px solid burlywood;
+  border: 2px solid var(--primary-navbar);
   padding: 0 12px;
   border-radius: 20px;
   margin-bottom: 20px;
   height: 30px;
+  background-color: var(--secondary-background);
+}
+
+.card-number,
+.cvv-number,
+.order-name {
+  position: relative;
+}
+
+.input-label {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--secondary-background);
+  border-radius: 2px;
+  padding: 0 2px;
+  font-size: 12px;
+  top: -7px;
+  left: 10px;
 }
 
 .individual-item {
@@ -118,7 +137,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* margin-top: 80px; */
   gap: 20px;
 }
 
