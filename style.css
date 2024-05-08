@@ -25,9 +25,10 @@ body {
 
 .checkout-details {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 60px 20px;
+  margin: 10px 10px;
   gap: 60px;
 }
 
@@ -49,16 +50,31 @@ body {
 .name-section {
   background-color: #eee1d5;
   border-radius: 10px;
-  padding: 0.8em 1.4em 1em;
+  padding: 0.8em 1.4em 1.4em;
 }
 
 .name-section input {
-  width: 92%;
+  width: 94%;
   border: 1px solid burlywood;
   padding: 0 12px;
   border-radius: 20px;
   height: 30px;
 }
+
+.payment-section {
+  background-color: #eee1d5;
+  border-radius: 10px;
+  padding: 0.8em 1.4em 1.4em;
+}
+
+.payment-section input {
+  width: 94%;
+  border: 1px solid burlywood;
+  padding: 0 12px;
+  border-radius: 20px;
+  height: 30px;
+}
+
 .individual-item {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
