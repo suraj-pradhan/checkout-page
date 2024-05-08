@@ -26,13 +26,12 @@ body {
 .checkout-details {
   display: flex;
   justify-content: space-around;
-  padding: 70px 20px;
-  gap: 3em;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  gap: 60px;
 }
 
 .item-details {
-  /* display: flex;
-  flex-direction: column; */
   background-color: #eee1d5;
   border-radius: 10px;
   padding: 0.8em 1.4em 1em;
@@ -43,15 +42,22 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2em;
-
-  max-height: 30em;
-  max-width: 20em;
+  height: 30em;
+  width: 33em;
 }
 
 .name-section {
   background-color: #eee1d5;
   border-radius: 10px;
   padding: 0.8em 1.4em 1em;
+}
+
+.name-section input {
+  width: 92%;
+  border: 1px solid burlywood;
+  padding: 0 12px;
+  border-radius: 20px;
+  height: 30px;
 }
 .individual-item {
   display: grid;
@@ -72,7 +78,7 @@ body {
 
 /* Rules for horizontal line */
 .horizontal-line {
-  border: 1px solid rgb(133, 79, 10);
+  border: 1px solid rgb(190, 142, 78);
   margin: 1.5em 0;
 }
 /* Rules for checkout details ends */
