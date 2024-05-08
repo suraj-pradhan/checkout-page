@@ -69,7 +69,7 @@ body {
   border: 2px solid var(--primary-navbar);
   padding: 0 12px;
   border-radius: 20px;
-  height: 30px;
+  height: 35px;
   background-color: var(--secondary-background);
 }
 
@@ -85,7 +85,7 @@ body {
   padding: 0 12px;
   border-radius: 20px;
   margin-bottom: 20px;
-  height: 30px;
+  height: 35px;
   background-color: var(--secondary-background);
 }
 
@@ -101,7 +101,7 @@ body {
   background-color: var(--secondary-background);
   border-radius: 2px;
   padding: 0 2px;
-  font-size: 12px;
+  font-size: 13px;
   top: -7px;
   left: 10px;
 }
@@ -137,7 +137,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
 }
 
 .bill-details {
@@ -156,13 +155,21 @@ body {
 
 .order-button {
   display: flex;
-  height: 40px;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  align-self: center;
+  height: 40px;
   border: 1px solid burlywood;
   background-color: rgb(235, 205, 165);
   border-radius: 20px;
-  width: 60%;
+  width: 60em;
+}
+
+.bottom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 30px 40px;
 }
 
 .order-button button {
