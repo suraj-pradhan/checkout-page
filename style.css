@@ -26,13 +26,12 @@ body {
 .checkout-details {
   display: flex;
   justify-content: space-around;
-  padding: 70px 20px;
-  gap: 3em;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  gap: 60px;
 }
 
 .item-details {
-  /* display: flex;
-  flex-direction: column; */
   background-color: #eee1d5;
   border-radius: 10px;
   padding: 0.8em 1.4em 1em;
@@ -43,9 +42,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2em;
-
-  max-height: 30em;
-  max-width: 20em;
+  height: 30em;
+  width: 30em;
 }
 
 .name-section {
