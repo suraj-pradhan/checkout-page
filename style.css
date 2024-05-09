@@ -6,6 +6,9 @@
   /* Backgrounds */
   --primary-background: #eff0ef;
   --secondary-background: #eee1d5;
+  /* Button */
+  --button-background: #deb993;
+  --button-hover: #87572a;
   /* Colors */
   --primary-text-color: #2b2d24;
   --secondary-text-color: #ede6b6;
@@ -70,7 +73,7 @@ body {
   border: 2px solid var(--tertiary-text-color);
   padding: 0 12px;
   border-radius: 20px;
-  height: 35px;
+  height: 38px;
   background-color: var(--secondary-background);
 }
 
@@ -86,8 +89,12 @@ body {
   padding: 0 12px;
   border-radius: 20px;
   margin-bottom: 20px;
-  height: 35px;
+  height: 38px;
   background-color: var(--secondary-background);
+}
+
+.cvv-number input {
+  width: 35%;
 }
 
 .card-number,
@@ -114,12 +121,12 @@ body {
 
 .item-description {
   margin-top: 0.3em;
-  color: rgb(133, 79, 10);
+  color: var(--tertiary-text-color);
   font-size: 13px;
 }
 
 .main-text {
-  color: rgb(133, 79, 10);
+  color: var(--tertiary-text-color);
   font-size: 0.9rem;
   margin-bottom: 2.2em;
 }
@@ -158,11 +165,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: center;
-  height: 40px;
-  border: 1px solid burlywood;
-  background-color: rgb(235, 205, 165);
-  border-radius: 20px;
   width: 60em;
 }
 
@@ -175,13 +177,24 @@ body {
 
 .order-button button {
   border: none;
-  background-color: transparent;
+  width: 100%;
+  height: 38px;
+  background-color: var(--button-background);
   color: var(--primary-text-color);
+  border-radius: 20px;
+}
+
+.order-button button:hover {
+  background-color: var(--button-hover);
+  color: var(--secondary-text-color);
 }
 
 /* Media Queries */
 @media (max-width: 720px) {
   .checkout-details {
     flex-wrap: wrap;
+  }
+  .payment-details {
+    width: 33em;
   }
 }
